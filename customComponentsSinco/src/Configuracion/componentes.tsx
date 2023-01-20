@@ -400,11 +400,6 @@ export const Componentes: Components = {
       fontSize: "small",
     },
   },
-  MuiTableCell: {
-    styleOverrides: {
-      sizeSmall: {},
-    },
-  },
   // SVG ICON
   MuiSvgIcon: {
     styleOverrides: {
@@ -426,6 +421,19 @@ export const Componentes: Components = {
       },
     },
   },
+  // TABLE HEAD
+  MuiTableHead: {
+    styleOverrides: {
+      
+    },
+  },
+  // TABLE CELL
+  MuiTableCell: {
+    styleOverrides: {
+      sizeSmall: {},
+    },
+  },
+
   // FEEDBACK.
 
   // ALERT
@@ -433,8 +441,9 @@ export const Componentes: Components = {
     styleOverrides: {
       root: {
         fontSize: "13px",
+        fontWeight: "400",
         lineHeight: "15.6px",
-        letterSpacing: ".17px",
+        letterSpacing: "0.17px",
       },
     },
   },
@@ -443,6 +452,9 @@ export const Componentes: Components = {
     styleOverrides: {
       root: {
         fontSize: "14px",
+        paddingBottom: 0,
+        lineHeight: "14px",
+        letterSpacing: "0.15px",
       },
     },
   },
