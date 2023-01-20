@@ -10,6 +10,7 @@ import FabComponent from "./FabComponent";
 import ComponetTextField from "./textField";
 import ComponentRadio from "./ComponentRadio";
 import ComponentSwitch from "./ComponentSwitch";
+import Paper from "@mui/material/Paper";
 function App() {
   return (
     <div>
@@ -24,6 +25,7 @@ function App() {
       <ComponetChip />
       <FabComponent />
       <ComponetTextField />
+      <Paper elevation={1} sx={{display: "flex", width: 120, height: 120}}></Paper>
     </div>
   );
 }

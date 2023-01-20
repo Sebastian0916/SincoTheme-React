@@ -32,39 +32,57 @@ export const Componentes: Components = {
         },
         containedSizeSmall: {
           fontSize: 13,
+          fontWeight: "400",
           lineHeight: "18px",
+          letterSpacing: ".2px",
         },
         containedSizeMedium: {
           fontSize: 14,
+          fontWeight: "500",
           lineHeight: "20px",
+          letterSpacing: ".4px",
         },
         containedSizeLarge: {
-          fontSize: 14,
+          fontSize: 15,
+          fontWeight: "500",
           lineHeight: "23px",
+          letterSpacing: "0.46px",
         },
         textSizeSmall: {
           fontSize: 13,
+          fontWeight: "400",
           lineHeight: "18px",
+          letterSpacing: ".2px",
         },
         textSizeMedium: {
           fontSize: 14,
+          fontWeight: "500",
           lineHeight: "20px",
+          letterSpacing: ".4px",
         },
         textSizeLarge: {
-          fontSize: 14,
+          fontSize: 15,
+          fontWeight: "500",
           lineHeight: "23px",
+          letterSpacing: ".46px",
         },
         outlinedSizeSmall: {
           fontSize: 13,
+          fontWeight: "400",
           lineHeight: "18px",
+          letterSpacing: ".2px",
         },
         outlinedSizeMedium: {
           fontSize: 14,
+          fontWeight: "500",
           lineHeight: "20px",
+          letterSpacing: ".4px",
         },
         outlinedSizeLarge: {
-          fontSize: 14,
+          fontSize: 15,
+          fontWeight: "500",
           lineHeight: "23px",
+          letterSpacing: ".46px",
         },
         root: {
           textTransform: "none",
@@ -309,6 +327,8 @@ export const Componentes: Components = {
       root: {
         fontSize: "14px",
         fontWeight: 400,
+        lineHeight: "143%",
+        letterSpacing: "0.17px",
       },
     },
   },
@@ -332,7 +352,7 @@ export const Componentes: Components = {
         fontSize: 12,
       },
       sizeMedium: {
-        fontSize: 12,
+        fontSize: 13,
       },
       root: {
         borderRadius: 4,
@@ -380,6 +400,11 @@ export const Componentes: Components = {
       fontSize: "small",
     },
   },
+  MuiTableCell: {
+    styleOverrides: {
+      sizeSmall: {},
+    },
+  },
   // SVG ICON
   MuiSvgIcon: {
     styleOverrides: {
@@ -408,6 +433,8 @@ export const Componentes: Components = {
     styleOverrides: {
       root: {
         fontSize: "13px",
+        lineHeight: "15.6px",
+        letterSpacing: ".17px",
       },
     },
   },
@@ -415,7 +442,7 @@ export const Componentes: Components = {
   MuiAlertTitle: {
     styleOverrides: {
       root: {
-        fontSize: "13px",
+        fontSize: "14px",
       },
     },
   },
@@ -444,6 +471,106 @@ export const Componentes: Components = {
     styleOverrides: {
       root: {
         textTransform: "none",
+      },
+    },
+  },
+  MuiPaper: {
+    styleOverrides: {
+      elevation1: {
+        boxShadow:
+          "0px 1px 3px rgba(24, 39, 75, 0.12), 0px 1px 1px -1px rgba(24, 39, 75, 0.14), 0px 2px 1px -2px rgba(24, 39, 75, 0.2)",
+      },
+      elevation2: {
+        boxShadow:
+          "0px 1px 5px rgba(24, 39, 75, 0.12), 0px 2px 2px rgba(24, 39, 75, 0.14), 0px 3px 1px -2px rgba(24, 39, 75, 0.2)",
+      },
+      elevation3: {
+        boxShadow:
+          "0px 1px 8px rgba(24, 39, 75, 0.12), 0px 3px 4px rgba(24, 39, 75, 0.14), 0px 3px 3px -2px rgba(24, 39, 75, 0.2)",
+      },
+      elevation4: {
+        boxShadow:
+          "0px 2px 4px -1px rgba(24, 39, 75, 0.2), 0px 4px 5px rgba(24, 39, 75, 0.14), 0px 1px 10px rgba(24, 39, 75, 0.12)",
+      },
+      elevation5: {
+        boxShadow:
+          "0px 3px 5px -1px rgba(24, 39, 75, 0.2), 0px 5px 8px rgba(24, 39, 75, 0.14), 0px 1px 14px rgba(24, 39, 75, 0.12)",
+      },
+      elevation6: {
+        boxShadow:
+          "0px 3px 5px -1px rgba(24, 39, 75, 0.2), 0px 6px 10px rgba(24, 39, 75, 0.14), 0px 1px 18px rgba(24, 39, 75, 0.12)",
+      },
+      elevation7: {
+        boxShadow:
+          "0px 4px 5px -2px rgba(24, 39, 75, 0.2), 0px 7px 10px 1px rgba(24, 39, 75, 0.14), 0px 2px 16px 1px rgba(24, 39, 75, 0.12)",
+      },
+      elevation8: {
+        boxShadow:
+          "0px 5px 5px -3px rgba(24, 39, 75, 0.2), 0px 8px 10px 1px rgba(24, 39, 75, 0.14), 0px 3px 14px 2px rgba(24, 39, 75, 0.12)",
+      },
+      elevation9: {
+        boxShadow:
+          "0px 5px 6px -3px rgba(24, 39, 75, 0.2), 0px 9px 12px 1px rgba(24, 39, 75, 0.14), 0px 3px 16px 2px rgba(24, 39, 75, 0.12)",
+      },
+      elevation10: {
+        boxShadow:
+          "0px 6px 6px -3px rgba(24, 39, 75, 0.2), 0px 10px 14px 1px rgba(24, 39, 75, 0.14), 0px 4px 18px 3px rgba(24, 39, 75, 0.12)",
+      },
+      elevation11: {
+        boxShadow:
+          "0px 6px 7px -4px rgba(24, 39, 75, 0.2), 0px 11px 15px 1px rgba(24, 39, 75, 0.14), 0px 4px 20px 3px rgba(24, 39, 75, 0.12)",
+      },
+      elevation12: {
+        boxShadow:
+          "0px 7px 8px -4px rgba(24, 39, 75, 0.2), 0px 12px 17px 2px rgba(24, 39, 75, 0.14), 0px 5px 22px 4px rgba(24, 39, 75, 0.12)",
+      },
+      elevation13: {
+        boxShadow:
+          "0px 7px 8px -4px rgba(24, 39, 75, 0.2), 0px 13px 19px 2px rgba(24, 39, 75, 0.14), 0px 5px 24px 4px rgba(24, 39, 75, 0.12)",
+      },
+      elevation14: {
+        boxShadow:
+          "0px 7px 9px -4px rgba(24, 39, 75, 0.2), 0px 14px 21px 2px rgba(24, 39, 75, 0.14), 0px 5px 26px 4px rgba(24, 39, 75, 0.12)",
+      },
+      elevation15: {
+        boxShadow:
+          "0px 8px 9px -5px rgba(24, 39, 75, 0.2), 0px 15px 22px 2px rgba(24, 39, 75, 0.14), 0px 6px 28px 5px rgba(24, 39, 75, 0.12)",
+      },
+      elevation16: {
+        boxShadow:
+          "0px 8px 10px -5px rgba(24, 39, 75, 0.2), 0px 16px 24px 2px rgba(24, 39, 75, 0.14), 0px 6px 30px 5px rgba(24, 39, 75, 0.12)",
+      },
+      elevation17: {
+        boxShadow:
+          "0px 8px 11px -5px rgba(24, 39, 75, 0.2), 0px 17px 26px 2px rgba(24, 39, 75, 0.14), 0px 6px 32px 5px rgba(24, 39, 75, 0.12)",
+      },
+      elevation18: {
+        boxShadow:
+          "0px 9px 11px -5px rgba(24, 39, 75, 0.2), 0px 18px 28px 2px rgba(24, 39, 75, 0.14), 0px 7px 34px 6px rgba(24, 39, 75, 0.12)",
+      },
+      elevation19: {
+        boxShadow:
+          "0px 9px 12px -6px rgba(24, 39, 75, 0.2), 0px 19px 29px 2px rgba(24, 39, 75, 0.14), 0px 7px 36px 6px rgba(24, 39, 75, 0.12)",
+      },
+      elevation20: {
+        boxShadow:
+          "0px 10px 13px -6px rgba(24, 39, 75, 0.2), 0px 20px 31px 3px rgba(24, 39, 75, 0.14), 0px 8px 38px 7px rgba(24, 39, 75, 0.12)",
+      },
+      elevation21: {
+        boxShadow:
+          "0px 10px 13px -6px rgba(24, 39, 75, 0.2), 0px 21px 33px 3px rgba(24, 39, 75, 0.14), 0px 8px 40px 7px rgba(24, 39, 75, 0.12)",
+      },
+      elevation22: {
+        boxShadow:
+          "0px 10px 14px -6px rgba(24, 39, 75, 0.2), 0px 22px 35px 3px rgba(24, 39, 75, 0.14), 0px 8px 42px 7px rgba(24, 39, 75, 0.12)",
+      },
+      elevation23: {
+        boxShadow:
+          "0px 11px 14px -7px rgba(24, 39, 75, 0.2), 0px 23px 36px 3px rgba(24, 39, 75, 0.14), 0px 9px 44px 8px rgba(24, 39, 75, 0.12)",
+      },
+      elevation24: {
+        boxShadow:
+          "0px 11px 15px -7px rgba(24, 39, 75, 0.2), 0px 24px 38px 3px rgba(24, 39, 75, 0.14), 0px 9px 46px 8px rgba(24, 39, 75, 0.12)",
       },
     },
   },

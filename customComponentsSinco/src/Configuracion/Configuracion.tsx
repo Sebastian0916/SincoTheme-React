@@ -56,7 +56,7 @@ export const light: ThemeOptions = {
       contrastText: "#FFF",
     },
     background: {
-      paper: "#FBFBFB",
+      paper: "#FFF",
       default: "#F1F0EE",
     },
     divider: "rgba(16, 24, 64, 0.12)",

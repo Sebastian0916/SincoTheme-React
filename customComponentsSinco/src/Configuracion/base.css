@@ -1,3 +1,8 @@
 html {
-     font-size: .652rem;
-};
+  font-size: 0.652rem;
+}
+p {
+  font-family: "Roboto";
+  font-size: "12px";
+  font-weight: "400";
+}
