@@ -1,5 +1,4 @@
 import { Fab, Stack } from "@mui/material";
-import React from "react";
 import AddIcon from "@mui/icons-material/Add";
 
 const FabComponent = () => {
@@ -13,10 +12,10 @@ const FabComponent = () => {
           <Fab size="medium" color="primary" aria-label="add">
             <AddIcon />
           </Fab>
-          <Fab color="primary" aria-label="add">
+          <Fab size="large" color="primary" aria-label="add">
             <AddIcon />
           </Fab>
-          <Fab size="small" variant="extended" color="primary" aria-label="add">
+          <Fab  variant="extended" color="primary" aria-label="add">
             <AddIcon />
             Fab
           </Fab>
