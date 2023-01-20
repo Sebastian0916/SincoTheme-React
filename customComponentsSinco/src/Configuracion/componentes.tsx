@@ -423,9 +423,7 @@ export const Componentes: Components = {
   },
   // TABLE HEAD
   MuiTableHead: {
-    styleOverrides: {
-      
-    },
+    styleOverrides: {},
   },
   // TABLE CELL
   MuiTableCell: {
@@ -435,7 +433,21 @@ export const Componentes: Components = {
   },
 
   // FEEDBACK.
-
+  MuiBadge: {
+    styleOverrides: {
+      badge: {
+        fontSize: "10px",
+        borderRadius: "100%",
+        minWidth: "10px",
+        lineHeight: 0,
+        height: 14.4,
+        width: 14,
+      },
+      root: {
+        fontSize: "16px",
+      },
+    },
+  },
   // ALERT
   MuiAlert: {
     styleOverrides: {
