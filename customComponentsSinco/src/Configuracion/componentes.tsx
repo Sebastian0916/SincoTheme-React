@@ -363,6 +363,7 @@ export const Componentes: Components = {
       fontSize: "small",
     },
   },
+<<<<<<< HEAD
   // LIST
   MuiListSubheader: {
     styleOverrides: {
@@ -392,6 +393,8 @@ export const Componentes: Components = {
       },
     },
   },
+=======
+>>>>>>> 2258c22c10853338de65ad608cdc188d45785b17
   // SVG ICON
   MuiSvgIcon: {
     styleOverrides: {
@@ -434,15 +437,41 @@ export const Componentes: Components = {
       },
     },
   },
-  // FEEDBACK.
+  // TABLE HEAD
+  MuiTableHead: {
+    styleOverrides: {},
+  },
+  // TABLE CELL
+  MuiTableCell: {
+    styleOverrides: {
+      sizeSmall: {},
+    },
+  },
 
+  // FEEDBACK.
+  MuiBadge: {
+    styleOverrides: {
+      badge: {
+        fontSize: "10px",
+        borderRadius: "100%",
+        minWidth: "10px",
+        lineHeight: 0,
+        height: 14.4,
+        width: 14,
+      },
+      root: {
+        fontSize: "16px",
+      },
+    },
+  },
   // ALERT
   MuiAlert: {
     styleOverrides: {
       root: {
         fontSize: "13px",
+        fontWeight: "400",
         lineHeight: "15.6px",
-        letterSpacing: ".17px",
+        letterSpacing: "0.17px",
       },
     },
   },
@@ -451,6 +480,9 @@ export const Componentes: Components = {
     styleOverrides: {
       root: {
         fontSize: "14px",
+        paddingBottom: 0,
+        lineHeight: "14px",
+        letterSpacing: "0.15px",
       },
     },
   },
