@@ -27,67 +27,28 @@ export const Componentes: Components = {
   MuiButton: {
     styleOverrides: {
       sizeSmall: {
+        fontSize: 13,
+        lineHeight: "18px",
+        letterSpacing: ".2px",
+        fontStyle: "normal",
+        fontWeight: "400",
         "& .MuiButton-startIcon>*:nth-of-type(1)": {
           fontSize: "14px",
         },
-        containedSizeSmall: {
-          fontSize: 13,
-          fontWeight: "400",
-          lineHeight: "18px",
-          letterSpacing: ".2px",
-        },
-        containedSizeMedium: {
-          fontSize: 14,
-          fontWeight: "500",
-          lineHeight: "20px",
-          letterSpacing: ".4px",
-        },
-        containedSizeLarge: {
-          fontSize: 15,
-          fontWeight: "500",
-          lineHeight: "23px",
-          letterSpacing: "0.46px",
-        },
-        textSizeSmall: {
-          fontSize: 13,
-          fontWeight: "400",
-          lineHeight: "18px",
-          letterSpacing: ".2px",
-        },
-        textSizeMedium: {
-          fontSize: 14,
-          fontWeight: "500",
-          lineHeight: "20px",
-          letterSpacing: ".4px",
-        },
-        textSizeLarge: {
-          fontSize: 15,
-          fontWeight: "500",
-          lineHeight: "23px",
-          letterSpacing: ".46px",
-        },
-        outlinedSizeSmall: {
-          fontSize: 13,
-          fontWeight: "400",
-          lineHeight: "18px",
-          letterSpacing: ".2px",
-        },
-        outlinedSizeMedium: {
-          fontSize: 14,
-          fontWeight: "500",
-          lineHeight: "20px",
-          letterSpacing: ".4px",
-        },
-        outlinedSizeLarge: {
-          fontSize: 15,
-          fontWeight: "500",
-          lineHeight: "23px",
-          letterSpacing: ".46px",
-        },
-        root: {
-          textTransform: "none",
-          minWidth: "unset",
-        },
+      },
+      sizeMedium: {
+        fontSize: 14,
+        lineHeight: 1.50,
+        letterSpacing: "0.46px",
+      },
+      sizeLarge: {
+        fontSize: 15,
+        lineHeight: 1.7,
+        letterSpacing: ".46px",
+      },
+      root: {
+        textTransform: "none",
+        minWidth: "unset",
       },
     },
     defaultProps: {
@@ -156,6 +117,7 @@ export const Componentes: Components = {
         "&.MuiButtonBase-root.MuiFab-extended": {
           height: 38,
           width: 86,
+          fontSize: 14,
         },
       },
       root: {
@@ -167,6 +129,7 @@ export const Componentes: Components = {
           "&.MuiButtonBase-root.MuiFab-extended": {
             height: 48,
             width: 88,
+            fontSize: 15,
           },
         },
       },
@@ -180,10 +143,10 @@ export const Componentes: Components = {
     styleOverrides: {
       root: {
         "& .MuiSvgIcon-fontSizeSmall": {
-          fontSize: "px",
+          fontSize: 16,
         },
         "& .MuiSvgIcon-fontSizeMedium": {
-          fontSize: "px",
+          fontSize: 20,
         },
         padding: "4px",
       },
@@ -400,9 +363,33 @@ export const Componentes: Components = {
       fontSize: "small",
     },
   },
-  MuiTableCell: {
+  // LIST
+  MuiListSubheader: {
     styleOverrides: {
-      sizeSmall: {},
+      root: {
+        fontSize: 12,
+      },
+    },
+  },
+  MuiListItemText: {
+    styleOverrides: {
+      dense: {
+        "&.MuiListItemButton-dense": {
+          height: 36,
+        },
+      },
+      root: {
+        fontSize: 14,
+      },
+    },
+  },
+  MuiListItem: {
+    styleOverrides: {
+      root: {
+        "& .MuiTypography-body2": {
+          fontSize: 14,
+        },
+      },
     },
   },
   // SVG ICON
@@ -417,6 +404,27 @@ export const Componentes: Components = {
     },
   },
   // TABLE ROW
+  MuiTableHead: {
+    styleOverrides: {
+      root: {
+        fontSize: 13,
+      },
+    },
+  },
+  MuiTableCell: {
+    styleOverrides: {
+      sizeSmall: {
+        fontSize: 13,
+      },
+    },
+  },
+  MuiTableFooter: {
+    styleOverrides: {
+      root: {
+        fontSize: 12,
+      },
+    },
+  },
   MuiTableRow: {
     styleOverrides: {
       root: {

@@ -1,7 +1,7 @@
 import { ThemeOptions } from "@mui/material";
-import { components   } from './componentes';
-import { typography   } from './tipografia';
-import { grey         } from './palettes';
+import { components } from "./componentes";
+import { typography } from "./tipografia";
+import { grey } from "./palettes";
 
 export const light: ThemeOptions = {
   typography,
@@ -57,7 +57,7 @@ export const light: ThemeOptions = {
     },
     background: {
       paper: "#FFF",
-      default: "#F1F0EE",
+      default: "#000",
     },
     divider: "rgba(16, 24, 64, 0.12)",
   },
