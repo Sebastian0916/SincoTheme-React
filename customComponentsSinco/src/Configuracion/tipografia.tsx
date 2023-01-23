@@ -1,4 +1,5 @@
 import { TypographyOptions } from "@mui/material/styles/createTypography";
+import { textTransform } from "@mui/system";
 
 <link
   href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -51,22 +52,22 @@ const Typography: TypographyOptions = {
   subtitle1: {
     fontFamily: "Roboto",
     fontSize: "14px",
-    fontWeight: "400",
+    fontWeight: "500",
     lineHeight: "19.6px",
-    letterSpacing: "15px",
+    letterSpacing: "0.15px",
   },
   subtitle2: {
     fontFamily: "Roboto",
     fontSize: "13px",
     fontWeight: "500",
-    lineHeight: "18.2px",
+    lineHeight: "15.6px",
     letterSpacing: "0.1px",
   },
   body1: {
     fontFamily: "Roboto",
     fontSize: "14px",
     fontWeight: "400",
-    lineHeight: "19.6px",
+    lineHeight: "18.2px",
     letterSpacing: "0.15px",
   },
   body2: {

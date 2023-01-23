@@ -16,14 +16,15 @@ export default function ComponetCheckbox() {
         {/* <div>
           <Checkbox defaultChecked size="small" />
           <Checkbox defaultChecked />
+          <Checkbox defaultChecked size="medium" />
           <Checkbox
             defaultChecked
             sx={{ "& .MuiSvgIcon-root": { fontSize: 28 } }}
           />
         </div>
         <div>
-          <Checkbox defaultChecked size="small" color="secondary" />
           <Checkbox defaultChecked color="secondary" />
+          <Checkbox defaultChecked size="medium" color="secondary" />
           <Checkbox
             color="secondary"
             defaultChecked
@@ -31,8 +32,8 @@ export default function ComponetCheckbox() {
           />
         </div>
         <div>
-          <Checkbox defaultChecked size="small" color="error" />
           <Checkbox defaultChecked color="error" />
+          <Checkbox defaultChecked size="medium" color="error" />
           <Checkbox
             color="error"
             defaultChecked
@@ -40,8 +41,8 @@ export default function ComponetCheckbox() {
           />
         </div>
         <div>
-          <Checkbox defaultChecked size="small" color="info" />
           <Checkbox defaultChecked color="info" />
+          <Checkbox defaultChecked size="medium" color="info" />
           <Checkbox
             color="info"
             defaultChecked
@@ -49,8 +50,8 @@ export default function ComponetCheckbox() {
           />
         </div>
         <div>
-          <Checkbox defaultChecked size="small" color="success" />
           <Checkbox color="success" defaultChecked />
+          <Checkbox defaultChecked size="medium" color="success" />
           <Checkbox
             defaultChecked
             color="success"
@@ -58,8 +59,8 @@ export default function ComponetCheckbox() {
           />
         </div>
         <div>
-          <Checkbox defaultChecked size="small" color="warning" />
           <Checkbox defaultChecked color="warning" />
+          <Checkbox defaultChecked size="medium" color="warning" />
           <Checkbox
             color="warning"
             defaultChecked
