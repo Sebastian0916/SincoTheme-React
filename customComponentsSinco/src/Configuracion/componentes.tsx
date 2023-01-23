@@ -26,21 +26,25 @@ export const Componentes: Components = {
   // BUTTON
   MuiButton: {
     styleOverrides: {
+      sizeMedium:{
+        fontWeight: 500
+      },
       sizeSmall: {
         "& .MuiButton-startIcon>*:nth-of-type(1)": {
           fontSize: "14px",
         },
+        fontWeight: 400,
         containedSizeSmall: {
           fontSize: 13,
           fontWeight: "400",
           lineHeight: "18px",
-          letterSpacing: ".2px",
+          letterSpacing: "0.2px",
         },
         containedSizeMedium: {
           fontSize: 14,
           fontWeight: "500",
           lineHeight: "20px",
-          letterSpacing: ".4px",
+          letterSpacing: "0.4px",
         },
         containedSizeLarge: {
           fontSize: 15,
@@ -52,37 +56,37 @@ export const Componentes: Components = {
           fontSize: 13,
           fontWeight: "400",
           lineHeight: "18px",
-          letterSpacing: ".2px",
+          letterSpacing: "0.2px",
         },
         textSizeMedium: {
           fontSize: 14,
           fontWeight: "500",
           lineHeight: "20px",
-          letterSpacing: ".4px",
+          letterSpacing: "0.4px",
         },
         textSizeLarge: {
           fontSize: 15,
           fontWeight: "500",
           lineHeight: "23px",
-          letterSpacing: ".46px",
+          letterSpacing: "0.46px",
         },
         outlinedSizeSmall: {
           fontSize: 13,
           fontWeight: "400",
           lineHeight: "18px",
-          letterSpacing: ".2px",
+          letterSpacing: "0.2px",
         },
         outlinedSizeMedium: {
           fontSize: 14,
           fontWeight: "500",
           lineHeight: "20px",
-          letterSpacing: ".4px",
+          letterSpacing: "0.4px",
         },
         outlinedSizeLarge: {
           fontSize: 15,
           fontWeight: "500",
           lineHeight: "23px",
-          letterSpacing: ".46px",
+          letterSpacing: "0.46px",
         },
         root: {
           textTransform: "none",
@@ -119,9 +123,34 @@ export const Componentes: Components = {
   },
 
   // CHECKBOX
+  // MuiFormLabel: {
+  //   styleOverrides: {
+  //     root: {
+  //       ".MuiTypography-root": {
+  //         fontSize: "13px",
+  //       },
+  //     },
+  //   },
+  // },
+  MuiTypography: {
+    styleOverrides: {
+      root: {
+        ".MuiFormControlLabel-label": {
+          fontSize: "13px",
+        },
+      },
+    },
+  },
   MuiCheckbox: {
     styleOverrides: {
       root: {
+        fontSize: "13px",
+        inputProps: {
+          fontSize: "13px",
+        },
+        "& .MuiFormControlLabel-label": {
+          fontSize: "13px",
+        },
         ".MuiSvgIcon-fontSizeSmall": {
           fontSize: 16,
         },
@@ -305,6 +334,13 @@ export const Componentes: Components = {
   },
   // FORM CONTROL
   MuiFormControl: {
+    styleOverrides: {
+      root: {
+        "&. MuiFormControlLabel-label": {
+          fontSize: "13px",
+        },
+      },
+    },
     defaultProps: {
       size: "small",
     },
@@ -419,16 +455,6 @@ export const Componentes: Components = {
           heigth: 28,
         },
       },
-    },
-  },
-  // TABLE HEAD
-  MuiTableHead: {
-    styleOverrides: {},
-  },
-  // TABLE CELL
-  MuiTableCell: {
-    styleOverrides: {
-      sizeSmall: {},
     },
   },
 

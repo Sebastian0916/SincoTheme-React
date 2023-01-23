@@ -19,15 +19,15 @@ import MailIcon from '@mui/icons-material/Mail';
 function App() {
   return (
     <div>
+      <ComponentButton /> 
+      {/* <ComponetCheckbox /> */}
       {/* <AppBarComponent /> */}
-      <Badge badgeContent={4} color="secondary">
+      {/* <Badge badgeContent={4} color="secondary">
         <MailIcon color="action" />
       </Badge>
       <Badge badgeContent={4} color="success">
         <MailIcon color="action" />
       </Badge>
-      {/* <ComponentButton />
-      <ComponetCheckbox />
       <ComponentIcon />
       <ComponentIconButton />
       <ComponentMenu />
@@ -37,7 +37,7 @@ function App() {
       <ComponetChip />
       <FabComponent />
       <ComponetTextField />
-      <Paper elevation={1} sx={{display: "flex", width: 120, height: 120}}></Paper> */}
+      <Paper elevation={1} sx={{display: "flex", width: 120, height: 120}}></Paper>  */}
     </div>
   );
 }

@@ -1,12 +1,19 @@
 import * as React from "react";
 import Checkbox from "@mui/material/Checkbox";
-import { Stack } from "@mui/material";
+import { FormControlLabel, FormGroup, Stack } from "@mui/material";
 
 export default function ComponetCheckbox() {
   return (
     <>
-      <Stack mt={2}  alignItems="center">
-        <div>
+      <Stack mt={2} alignItems="center">
+        <FormGroup>
+          <FormControlLabel
+            control={<Checkbox defaultChecked />}
+            label="Label"
+          />
+          <FormControlLabel disabled control={<Checkbox />} label="Disabled" />
+        </FormGroup>
+        {/* <div>
           <Checkbox defaultChecked size="small" />
           <Checkbox defaultChecked />
           <Checkbox
@@ -58,7 +65,7 @@ export default function ComponetCheckbox() {
             defaultChecked
             sx={{ "& .MuiSvgIcon-root": { fontSize: 28 } }}
           />
-        </div>
+        </div> */}
       </Stack>
     </>
   );
