@@ -38,7 +38,7 @@ export const Componentes: Components = {
       },
       sizeMedium: {
         fontSize: 14,
-        lineHeight: 1.50,
+        lineHeight: 1.5,
         letterSpacing: "0.46px",
       },
       sizeLarge: {
@@ -363,7 +363,6 @@ export const Componentes: Components = {
       fontSize: "small",
     },
   },
-<<<<<<< HEAD
   // LIST
   MuiListSubheader: {
     styleOverrides: {
@@ -393,8 +392,6 @@ export const Componentes: Components = {
       },
     },
   },
-=======
->>>>>>> 2258c22c10853338de65ad608cdc188d45785b17
   // SVG ICON
   MuiSvgIcon: {
     styleOverrides: {
@@ -438,15 +435,6 @@ export const Componentes: Components = {
     },
   },
   // TABLE HEAD
-  MuiTableHead: {
-    styleOverrides: {},
-  },
-  // TABLE CELL
-  MuiTableCell: {
-    styleOverrides: {
-      sizeSmall: {},
-    },
-  },
 
   // FEEDBACK.
   MuiBadge: {
