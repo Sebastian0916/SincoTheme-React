@@ -92,6 +92,7 @@ const Typography: TypographyOptions = {
   },
   button: {
     textTransform: "none",
-    minWidth: "unset",  },
+    minWidth: "unset",
+  },
 };
 export const typography = Typography;

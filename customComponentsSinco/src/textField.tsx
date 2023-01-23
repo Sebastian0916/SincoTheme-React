@@ -11,7 +11,7 @@ const ComponetTextField = () => {
             id="outlined-basic"
             label="Outlined"
             variant="outlined"
-            size="small"
+            size="medium"
           />
         </div>
         <div>
@@ -20,7 +20,7 @@ const ComponetTextField = () => {
             id="outlined-basic"
             label="Outlined"
             variant="filled"
-            size="small"
+            size="medium"
           />
         </div>
         <div>
@@ -29,7 +29,7 @@ const ComponetTextField = () => {
             id="outlined-basic"
             label="Outlined"
             variant="standard"
-            size="small"
+            size="medium"
           />
         </div>
       </Stack>

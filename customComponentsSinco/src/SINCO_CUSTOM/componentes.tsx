@@ -14,10 +14,24 @@ export const Componentes: Components = {
           "&.Mui-focused": { marginTop: 0 },
         },
         "& .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input":
-          { height: 23 },
+          { height: 23, fontSize: 13 },
       },
       tagSizeMedium: {
         root: { "& .MuiAutocomplete-inputRoot": { height: 46 } },
+      },
+    },
+  },
+
+  // APP BAR
+  MuiAppBar: {
+    styleOverrides: {
+      root: {
+        fontFamily: "Nunito",
+        fontStyle: "normal",
+        fontWeight: 600,
+        fontSize: "16px",
+        lineHeight: "22px",
+        letterSpacing: "0.15px",
       },
     },
   },
@@ -43,6 +57,7 @@ export const Componentes: Components = {
       },
       sizeLarge: {
         fontSize: 15,
+        fontWeight: 600,
         lineHeight: 1.7,
         letterSpacing: ".46px",
       },
@@ -91,6 +106,7 @@ export const Componentes: Components = {
   MuiCheckbox: {
     styleOverrides: {
       root: {
+        padding: 6,
         fontSize: "13px",
         inputProps: {
           fontSize: "13px",
@@ -110,6 +126,7 @@ export const Componentes: Components = {
       size: "small",
     },
   },
+
   // FLOATING ACTION BUTTON
   MuiFab: {
     styleOverrides: {
@@ -153,6 +170,7 @@ export const Componentes: Components = {
       size: "small",
     },
   },
+
   // RADIOGROUP
   MuiRadio: {
     styleOverrides: {
@@ -170,6 +188,7 @@ export const Componentes: Components = {
       size: "small",
     },
   },
+
   // RATING
   MuiRating: {
     styleOverrides: {
@@ -183,6 +202,7 @@ export const Componentes: Components = {
       size: "small",
     },
   },
+
   // SLIDER
   MuiSlider: {
     styleOverrides: {
@@ -195,12 +215,14 @@ export const Componentes: Components = {
       size: "small",
     },
   },
+
   // SWITCH
   MuiSwitch: {
     defaultProps: {
       size: "small",
     },
   },
+
   // TEXTFIELD INPUT BASE
   MuiTextField: {
     defaultProps: {
@@ -212,6 +234,7 @@ export const Componentes: Components = {
       size: "small",
     },
   },
+
   // INPUT LABEL
   MuiInputLabel: {
     styleOverrides: {
@@ -227,7 +250,7 @@ export const Componentes: Components = {
       },
       outlined: {
         "&.MuiInputLabel-outlined": {
-          top: 0,
+          top: -6,
         },
         "&.Mui-focused": {
           top: 3,
@@ -239,6 +262,7 @@ export const Componentes: Components = {
         },
       },
       sizeSmall: {
+        fontSize: 13,
         "&.MuiInputLabel-root": {
           top: -1,
           "&.Mui-focused": {
@@ -254,6 +278,7 @@ export const Componentes: Components = {
       },
     },
   },
+
   // INPUT BASE
   MuiInputBase: {
     styleOverrides: {
@@ -262,10 +287,11 @@ export const Componentes: Components = {
           height: 14,
         },
         "& .MuiOutlinedInput-input": {
-          height: 14,
+          height: 5,
         },
       },
       sizeSmall: {
+        fontSize: 13,
         ".MuiInputBase-inputSizeSmall	": {
           height: 13,
         },
@@ -277,10 +303,8 @@ export const Componentes: Components = {
         },
       },
     },
-    defaultProps: {
-      size: "small",
-    },
   },
+
   // FORM CONTROL
   MuiFormControl: {
     styleOverrides: {
@@ -294,18 +318,21 @@ export const Componentes: Components = {
       size: "small",
     },
   },
+
   // TOGGLE BUTTON
   MuiToggleButton: {
     defaultProps: {
       size: "small",
     },
   },
+
   //TOGGLE BUTTON GROUP
   MuiToggleButtonGroup: {
     defaultProps: {
       size: "small",
     },
   },
+
   // SNACKBAR
   MuiSnackbar: {
     styleOverrides: {
@@ -317,8 +344,6 @@ export const Componentes: Components = {
       },
     },
   },
-
-  // DATA DISPLAY.
 
   // AVATAR
   MuiAvatar: {
@@ -338,6 +363,7 @@ export const Componentes: Components = {
       sizes: "small",
     },
   },
+
   // CHIP
   MuiChip: {
     styleOverrides: {
@@ -387,12 +413,14 @@ export const Componentes: Components = {
       size: "small",
     },
   },
+
   // ICON
   MuiIcon: {
     defaultProps: {
       fontSize: "small",
     },
   },
+
   // LIST
   MuiListSubheader: {
     styleOverrides: {
@@ -422,6 +450,7 @@ export const Componentes: Components = {
       },
     },
   },
+
   // SVG ICON
   MuiSvgIcon: {
     styleOverrides: {
@@ -433,6 +462,7 @@ export const Componentes: Components = {
       fontSize: "small",
     },
   },
+
   // TABLE ROW
   MuiTableHead: {
     styleOverrides: {
@@ -489,6 +519,7 @@ export const Componentes: Components = {
       },
     },
   },
+
   // ALERT
   MuiAlert: {
     styleOverrides: {
@@ -500,6 +531,7 @@ export const Componentes: Components = {
       },
     },
   },
+
   // ALERT TITLE
   MuiAlertTitle: {
     styleOverrides: {
@@ -539,6 +571,7 @@ export const Componentes: Components = {
       },
     },
   },
+
   // BACKDROP
   MuiBackdrop: {
     styleOverrides: {
@@ -547,8 +580,6 @@ export const Componentes: Components = {
       },
     },
   },
-
-  // NAVIGATION.
 
   // MENU
   MuiMenuItem: {
@@ -559,6 +590,7 @@ export const Componentes: Components = {
       },
     },
   },
+
   // TAB
   MuiTab: {
     styleOverrides: {
@@ -567,6 +599,7 @@ export const Componentes: Components = {
       },
     },
   },
+
   // CARD
   MuiCardHeader: {
     styleOverrides: {
@@ -587,6 +620,7 @@ export const Componentes: Components = {
       },
     },
   },
+
   // BREADCRUMBS
   MuiBreadcrumbs: {
     styleOverrides: {
@@ -611,6 +645,7 @@ export const Componentes: Components = {
       },
     },
   },
+
   // MUI DIALOG TITLE
   MuiDialogTitle: {
     styleOverrides: {
@@ -638,7 +673,6 @@ export const Componentes: Components = {
   },
 
   // PAPER
-
   MuiPaper: {
     styleOverrides: {
       elevation1: {
