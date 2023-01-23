@@ -8,6 +8,9 @@ export const Componentes: Components = {
   MuiAutocomplete: {
     styleOverrides: {
       root: {
+        "& .MuiAutocomplete-endAdornment	": {
+          paddingTop: 5,
+        },
         "& .MuiInputLabel-root": {
           marginTop: 3,
           fontSize: 13,
@@ -54,6 +57,9 @@ export const Componentes: Components = {
         fontWeight: 500,
         lineHeight: 1.5,
         letterSpacing: "0.46px",
+        "& .MuiButton-startIcon>*:nth-of-type(1)": {
+          fontSize: "18px",
+        },
       },
       sizeLarge: {
         fontSize: 15,
@@ -134,6 +140,9 @@ export const Componentes: Components = {
         "&.MuiButtonBase-root.MuiFab-circular": {
           height: 36,
           width: 36,
+          "& .MuiSvgIcon-fontSizeSmall ": {
+            fontSize: 14,
+          },
         },
         "&.MuiButtonBase-root.MuiFab-extended": {
           height: 32,
@@ -146,23 +155,28 @@ export const Componentes: Components = {
           height: 48,
           width: 48,
         },
+        "& .MuiSvgIcon-root": {
+          fontSize: 18,
+        },
         "&.MuiButtonBase-root.MuiFab-extended": {
           height: 38,
           width: 86,
           fontSize: 14,
         },
       },
+
       root: {
-        root: {
-          "&.MuiButtonBase-root.MuiFab-circular": {
-            height: 56,
-            width: 56,
-          },
-          "&.MuiButtonBase-root.MuiFab-extended": {
-            height: 48,
-            width: 88,
-            fontSize: 15,
-          },
+        "&.MuiButtonBase-root.MuiFab-circular": {
+          height: 56,
+          width: 56,
+        },
+        "& .MuiSvgIcon-root": {
+          fontSize: 22,
+        },
+        "&.MuiButtonBase-root.MuiFab-extended": {
+          height: 48,
+          width: 88,
+          fontSize: 15,
         },
       },
     },
@@ -278,7 +292,17 @@ export const Componentes: Components = {
       },
     },
   },
-
+  MuiOutlinedInput: {
+    styleOverrides: {
+      root: {
+        "&.MuiInputBase-root": {
+          "& fieldset": {
+            borderColor: "rgba(16, 24, 64, 0.23)",
+          },
+        },
+      },
+    },
+  },
   // INPUT BASE
   MuiInputBase: {
     styleOverrides: {

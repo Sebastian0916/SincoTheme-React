@@ -31,8 +31,8 @@ function App() {
       <AutoCompleteComponent />
       <AlertComponent />
       <ComponetCheckbox />
-      {/* <AppBarComponent /> */}
-      {/* <Badge badgeContent={4} color="secondary">
+      <AppBarComponent />
+      <Badge badgeContent={4} color="secondary">
         <MailIcon color="action" />
       </Badge>
       <Badge badgeContent={4} color="success">
@@ -46,7 +46,10 @@ function App() {
       <ComponentTable />
       <ComponetChip />
       <FabComponent />
-    <Paper elevation={1} sx={{display: "flex", width: 120, height: 120}}></Paper>  */}
+      <Paper
+        elevation={1}
+        sx={{ display: "flex", width: 120, height: 120 }}
+      ></Paper>
       <ComponetTextField />
     </div>
   );

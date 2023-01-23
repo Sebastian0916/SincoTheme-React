@@ -18,7 +18,7 @@ export default function ComponentButton() {
         </IconButton>
 
         <br></br>
-        <Button variant="outlined" startIcon={<DeleteIcon />}>
+        <Button variant="outlined" size="medium" startIcon={<DeleteIcon />}>
           Delete
         </Button>
         <Button variant="contained" endIcon={<SendIcon />}>
