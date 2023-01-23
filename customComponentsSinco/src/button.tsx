@@ -1,19 +1,30 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import { Stack } from "@mui/material";
-import DeleteIcon from '@mui/icons-material/Delete';
-import SendIcon from '@mui/icons-material/Send';
+import { IconButton, Stack } from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
+import SendIcon from "@mui/icons-material/Send";
+import { PhotoCamera } from "@mui/icons-material";
 export default function ComponentButton() {
   return (
     <Stack mt={3} ml={50} gap={2}>
       <div>
-      <Button variant="outlined"  startIcon={<DeleteIcon />}>
-        Delete
-      </Button>
-      <Button variant="contained" endIcon={<SendIcon />}>
-        Send
-      </Button>
-      <br />
+        <IconButton
+          color="primary"
+          aria-label="upload picture"
+          component="label"
+        >
+          <input hidden accept="image/*" type="file" />
+          <PhotoCamera />
+        </IconButton>
+
+        <br></br>
+        <Button variant="outlined" startIcon={<DeleteIcon />}>
+          Delete
+        </Button>
+        <Button variant="contained" endIcon={<SendIcon />}>
+          Send
+        </Button>
+        <br />
         <Button size="small" variant="contained">
           Hola
         </Button>

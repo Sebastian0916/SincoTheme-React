@@ -15,11 +15,21 @@ import AppBarComponent from "./appBar";
 import Badge from '@mui/material/Badge';
 import Stack from '@mui/material/Stack';
 import MailIcon from '@mui/icons-material/Mail';
+import AlertComponent from "./alert";
+import AutoCompleteComponent from "./autocomplete";
+import AvatarComponent from "./avatar";
+import BagdeComponent from "./bagde";
+import BottomNavigationComponent from "./bottomNavigation";
 
 function App() {
   return (
     <div>
+      <BottomNavigationComponent />
       <ComponentButton /> 
+      <BagdeComponent />
+      <AvatarComponent />
+      <AutoCompleteComponent />
+      <AlertComponent />
       {/* <ComponetCheckbox /> */}
       {/* <AppBarComponent /> */}
       {/* <Badge badgeContent={4} color="secondary">

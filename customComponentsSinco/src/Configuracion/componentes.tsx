@@ -7,22 +7,21 @@ export const Componentes: Components = {
   // AUTOCOMPLETE
   MuiAutocomplete: {
     styleOverrides: {
-      tagSizeSmall: {
-        root: {
-          "& .MuiAutocomplete-inputRoot": {
-            height: 46,
-          },
+      root: {
+        "& .MuiInputLabel-root": {
+          marginTop: 3,
+          fontSize: 13,
+          "&.Mui-focused": { marginTop: 0 },
         },
+        "& .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input":
+          { height: 23 },
       },
       tagSizeMedium: {
-        root: {
-          "& .MuiAutocomplete-inputRoot": {
-            height: 46,
-          },
-        },
+        root: { "& .MuiAutocomplete-inputRoot": { height: 46 } },
       },
     },
   },
+
   // BUTTON
   MuiButton: {
     styleOverrides: {
@@ -74,22 +73,12 @@ export const Componentes: Components = {
   MuiIconButton: {
     styleOverrides: {
       sizeSmall: {
-        width: 40,
-        height: 40,
+        width: "13.33px",
+        height: "12.67px",
       },
     },
   },
 
-  // CHECKBOX
-  // MuiFormLabel: {
-  //   styleOverrides: {
-  //     root: {
-  //       ".MuiTypography-root": {
-  //         fontSize: "13px",
-  //       },
-  //     },
-  //   },
-  // },
   MuiTypography: {
     styleOverrides: {
       root: {
@@ -335,10 +324,18 @@ export const Componentes: Components = {
   MuiAvatar: {
     styleOverrides: {
       root: {
+        fontFamily: "Roboto",
+        fontStyle: "normal",
+        fontWeight: 400,
+        fontSize: " 13px",
+        lineHeight: "18px",
+        letterSpacing: "0.14px",
         width: "32px",
         height: "32px",
-        fontSize: "13px",
       },
+    },
+    defaultProps: {
+      sizes: "small",
     },
   },
   // CHIP
@@ -472,15 +469,23 @@ export const Componentes: Components = {
   MuiBadge: {
     styleOverrides: {
       badge: {
-        fontSize: "10px",
-        borderRadius: "100%",
-        minWidth: "10px",
+        fontWeight: 500,
         lineHeight: 0,
         height: 14.4,
         width: 14,
+        fontSize: "10px",
+        borderRadius: "100%",
+        minWidth: "10px",
       },
+
       root: {
-        fontSize: "16px",
+        fontWeight: 500,
+        lineHeight: 0,
+        height: 14.4,
+        width: 14,
+        fontSize: "10px",
+        borderRadius: "100%",
+        minWidth: "10px",
       },
     },
   },
@@ -506,6 +511,34 @@ export const Componentes: Components = {
       },
     },
   },
+  MuiBottomNavigation: {
+    styleOverrides: {
+      root: {
+        "&.css-11p4tlo-MuiBottomNavigationAction-label.Mui-selected": {
+          fontWeight: 400,
+          fontSize: "13",
+          lineHeight: "13px",
+          letterSpacing: "0.4px",
+        },
+        fontWeight: 400,
+        fontSize: "13",
+        lineHeight: "13px",
+        letterSpacing: "0.4px",
+      },
+    },
+  },
+  MuiBottomNavigationAction: {
+    styleOverrides: {
+      label: {
+        "&.MuiBottomNavigationAction-label.Mui-selected ": {
+          fontWeight: 400,
+          fontSize: "13px",
+          lineHeight: "13px",
+          letterSpacing: "0.4px",
+        },
+      },
+    },
+  },
   // BACKDROP
   MuiBackdrop: {
     styleOverrides: {
@@ -521,8 +554,8 @@ export const Componentes: Components = {
   MuiMenuItem: {
     styleOverrides: {
       dense: {
-        height: 28,
-        width: 106,
+        height: "28px",
+        width: "106px",
       },
     },
   },
@@ -534,6 +567,78 @@ export const Componentes: Components = {
       },
     },
   },
+  // CARD
+  MuiCardHeader: {
+    styleOverrides: {
+      root: {
+        fontFamily: "Nunito",
+        fontSize: "16px",
+        letterSpacing: "0.15px",
+        lineHeight: "140%",
+        fontWeight: 600,
+      },
+      subheader: {
+        fontfamily: "Roboto",
+        fontStyle: "normal",
+        fontWeight: 400,
+        fontSize: "14px",
+        lineHeight: "140%",
+        letterspacing: "0.15px",
+      },
+    },
+  },
+  // BREADCRUMBS
+  MuiBreadcrumbs: {
+    styleOverrides: {
+      li: {
+        fontSize: "12px",
+        fontWeight: 400,
+        lineHeight: "14.4px",
+        letterSpacing: 0.15,
+      },
+    },
+  },
+
+  // DIALOG
+  MuiDialog: {
+    styleOverrides: {
+      root: {
+        fontFamily: "Roboto",
+        fontWeight: 400,
+        fontSize: "14px",
+        lineHeight: "18.2px",
+        letterSpacing: "0.15px",
+      },
+    },
+  },
+  // MUI DIALOG TITLE
+  MuiDialogTitle: {
+    styleOverrides: {
+      root: {
+        fontFamily: "Nunito",
+        fontStyle: "normal",
+        fontWeight: 600,
+        fontSize: "16px",
+        lineHeight: "22px",
+        letterSpacing: "0.15px",
+      },
+    },
+  },
+  MuiDialogContent: {
+    styleOverrides: {
+      root: {
+        fontFamily: "Roboto",
+        fontStyle: "normal",
+        fontWeight: 400,
+        fontSize: "14px",
+        lineHeight: "18px",
+        letterSpacing: "0.15px",
+      },
+    },
+  },
+
+  // PAPER
+
   MuiPaper: {
     styleOverrides: {
       elevation1: {
